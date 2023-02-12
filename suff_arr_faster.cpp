@@ -1,34 +1,3 @@
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
-#include <algorithm>
-#include<fstream>
-#include <vector>
-#include <set>
-#include <map>
-#include <unordered_set>
-#include <unordered_map>
-#include <queue>
-#include <iomanip>
-#include <ctime>
-#include <cassert>
-#include <complex>
-#include <string>
-#include <cstring>
-#include <chrono>
-#include <random>
-#include <bitset>
-#include <fstream>
-#include <array>
-#include <functional>
-#include <stack>
-#include <memory>
-#define debug(x) std::cerr << __FUNCTION__ << ":" << __LINE__ << " " << #x << " = " << x << '\n';
-using ll = long long;
-using ull = unsigned long long;
-using pii = std::pair<int, int>;
-using pll = std::pair<ll, ll>;
-using namespace std;
 void my_radix_sort(vector<pair<pair<int, int>, int>> &a) {
     int n = a.size();
     {
@@ -111,15 +80,4 @@ vector<int> make_suff_arr(string &s){
         k++;
     }
     return p;
-}
-int main() {
-    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-    string s;
-    vector<int> ar;
-    cin >> s;
-    ar = make_suff_arr(s);
-    for (auto c: ar){
-        cout << c << ' ';
-    }
-    return 0;
 }
